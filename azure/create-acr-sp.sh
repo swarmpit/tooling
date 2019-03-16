@@ -1,15 +1,16 @@
 #!/bin/bash
 
 display_usage() {
-	echo "This script creates swarmpit service principal to access azure container registry"
-	echo -e "\nUsage:\n create-acr-sp.sh [registry-name]"
+  echo "This script creates swarmpit service principal to access azure container registry"
+  echo -e "\nUsage:\n create-acr-sp.sh [registry-name]"
   echo -e "\n example: create-acr-sp.sh registry712"
-	}
+}
+
 if [  $# -le 1 ]
-	then
-		display_usage
-		exit 1
-	fi
+then
+  display_usage
+  exit 1
+fi
 
 # Modify for your environment.
 # ACR_NAME: The name of your Azure Container Registry
