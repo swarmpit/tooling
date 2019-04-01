@@ -6,7 +6,7 @@ display_usage() {
   echo -e "\n example: create-acr-sp.sh registry712"
 }
 
-if [  $# -le 1 ]
+if [  $# -lt 1 ]
 then
   display_usage
   exit 1
